@@ -1,0 +1,22 @@
+---
+import Container from "@/layouts/Container.astro"
+---
+<Container>
+    <section class="py-8 flex flex-col gap-8">
+        {
+
+            Array(9).fill(0).map( () => (
+
+                <section class="flex flex-col gap-2">
+                    <div class="w-full aspect-video bg-zinc-200"></div>
+                    <div class="flex flex-col">
+                        <span class="text-sm font-semibold font-museo_sans">Timedriven</span>
+                        <span class="text-sm font-museo_sans">Germany</span>
+                    </div>
+                </section>
+
+            ))
+
+        }
+    </section>
+</Container>
