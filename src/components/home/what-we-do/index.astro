@@ -1,21 +1,23 @@
 ---
 import Container from "@/layouts/Container.astro"
 ---
-<Container>
-    <p class="font-museo_sans">What we do</p>
-    <h2 class="font-big_caslon_fb text-4xl">Digital experiences for clients around the world, from ambitious startups to global organizations.</h2>
-    {
+<section class="py-10">
+    <Container>
+        <p class="font-museo_sans">What we do</p>
+        <h2 class="font-big_caslon_fb text-4xl">Digital experiences for clients around the world, from ambitious startups to global organizations.</h2>
+        {
 
-        Array(4).fill(0).map( ( value ) => {
+            Array(4).fill(0).map( ( value ) => {
 
-            return (
-                <div class="grid gap-4">
-                    <p class="font-museo_sans text-xl">Web development</p>
-                    <p class="font-museo_sans text-sm font-light">We create inspired, high-impact websites and apps made to spark actions and build momentum — in a straightforward manner, using pragmatic solutions. We are experts in Figma, WordPress & Elementor, Webflow and Jamstack.</p>
-                </div>
-            )
+                return (
+                    <div class="grid gap-4">
+                        <p class="font-museo_sans text-xl">Web development</p>
+                        <p class="font-museo_sans text-sm font-light">We create inspired, high-impact websites and apps made to spark actions and build momentum — in a straightforward manner, using pragmatic solutions. We are experts in Figma, WordPress & Elementor, Webflow and Jamstack.</p>
+                    </div>
+                )
 
-        })
+            })
 
-    }
-</Container>
+        }
+    </Container>
+</section>

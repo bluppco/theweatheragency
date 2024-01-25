@@ -1,21 +1,23 @@
 ---
 import Container from "@/layouts/Container.astro"
 ---
-<Container>
-    <p class="font-museo_sans">Reco­gnition</p>
-    <h2 class="font-big_caslon_fb text-4xl">We consistently deliver high-quality work for world-class clients — but don't take our word for it.</h2>
-    {
+<section class="py-10">
+    <Container>
+        <p class="font-museo_sans">Reco­gnition</p>
+        <h2 class="font-big_caslon_fb text-4xl">We consistently deliver high-quality work for world-class clients — but don't take our word for it.</h2>
+        {
 
-        Array(4).fill(0).map( ( value ) => {
+            Array(4).fill(0).map( ( value ) => {
 
-            return (
-                <div class="grid gap-4">
-                    <div class="bg-zinc-200 w-24 h-12"/>
-                    <p class="font-museo_sans text-sm font-light">The Weather is The Manifest‘s #1 web design company in Germany 2023.</p>
-                </div>
-            )
+                return (
+                    <div class="grid gap-4">
+                        <div class="bg-zinc-200 w-24 h-12"/>
+                        <p class="font-museo_sans text-sm font-light">The Weather is The Manifest‘s #1 web design company in Germany 2023.</p>
+                    </div>
+                )
 
-        })
+            })
 
-    }
-</Container>
+        }
+    </Container>
+</section>
