@@ -5,6 +5,7 @@ import Layout from "@/layouts/Layout.astro"
 // IMPORTS ASTRO COMPONENTS
 import Footer from "@/components/common/footer/index.astro"
 import Header from "@/components/common/header/index.astro"
+import HeaderBanner from "@/components/common/header-banner/index.astro"
 import NotFound from "@/components/common/404/index.astro"
 ---
 <Layout
@@ -13,6 +14,7 @@ import NotFound from "@/components/common/404/index.astro"
 	image=""
 >
     <section class="md:h-screen md:max-h-screen">
+        <HeaderBanner />
         <Header />
         <NotFound />
     </section>

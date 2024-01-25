@@ -2,14 +2,18 @@
 import { Icon } from "astro-icon/components"
 ---
 <header class="h-10 fixed p-1 items-center justify-between px-4 grid grid-cols-4 w-full z-10">
-    <div class="w-fit">
-        <Icon name="jet" class="size-6"/>
-    </div>
+    <a href="/">
+        <div class="w-fit">
+            <Icon name="jet" class="size-6"/>
+        </div>
+    </a>
     <div class="h-4 col-span-2">
-        <img
-            src="/logo/the-weather-agency-logo.svg"
-            class="w-full h-full"
-        />
+        <a href="/">
+            <img
+                src="/logo/the-weather-agency-logo.svg"
+                class="w-full h-full"
+            />
+        </a>
     </div>
     <div class="flex gap-1 items-center w-fit justify-self-end">
         <span class="text-xs font-museo_sans">Menu</span>
