@@ -95,6 +95,7 @@ const BenchmarkingJSX = ( props ) => {
                         <TableHead className="text-right">Cloudfront Cost ($0.1/GB)</TableHead>
                         <TableHead className="text-right">Vercel Cost ($0.4/GB)</TableHead>
                         <TableHead className="text-right">Prismic Cost ($0.2/GB)</TableHead>
+                        <TableHead className="text-right">Elementor Cost ($1/GB)</TableHead>
                         <TableHead className="text-right font-semibold">Blupp Cost ($0.05/GB)</TableHead>
                     </TableRow>
                 </TableHeader>
@@ -112,6 +113,7 @@ const BenchmarkingJSX = ( props ) => {
                                     <TableCell className="text-right">{ formatPrice( value.current_size * value.hits , .1, 1000000 ) }</TableCell>
                                     <TableCell className="text-right">{ formatPrice( value.current_size * value.hits , .4, 1000000 ) }</TableCell>
                                     <TableCell className="text-right">{ formatPrice( value.current_size * value.hits , .2, 500000 ) }</TableCell>
+                                    <TableCell className="text-right">{ formatPrice( value.current_size * value.hits , 1, 100000 ) }</TableCell>
                                     <TableCell className="text-right font-semibold">{ formatPrice( value.blupp_size * value.hits , .05, 1000000 ) }</TableCell>
                                 </TableRow>
                             )
