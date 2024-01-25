@@ -32,7 +32,8 @@ module.exports = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       fontFamily: {
-        "museo_sans": ["museo-sans", "sans-serif"]
+        "museo_sans": ["museo-sans", "sans-serif"],
+        "big_caslon_fb": ["big-caslon-fb", "serif"]
       }
     },
   },
