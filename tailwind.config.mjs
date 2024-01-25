@@ -34,6 +34,10 @@ module.exports = {
       fontFamily: {
         "museo_sans": ["museo-sans", "sans-serif"],
         "big_caslon_fb": ["big-caslon-fb", "serif"]
+      },
+      colors: {
+        "twa_yellow": "#fff082",
+        "twa_grey": "#d2d0dc"
       }
     },
   },
