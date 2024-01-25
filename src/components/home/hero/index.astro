@@ -1,17 +1,62 @@
 ---
 import { Icon } from "astro-icon/components"
 ---
-<section class="h-screen relative">
+<section class="h-screen relative overflow-hidden">
     <section class="bg-zinc-200 w-full h-full">
         <video
             src="/video/website-video-hero.webm"
             class="w-full h-full object-cover object-center"
             autoplay
             loop
+            muted
+            playsinline
+            preload="auto"
         />
     </section>
     <div class="flex flex-col absolute bottom-4 items-center w-full">
         <span class="text-xs font-museo_sans">More</span>
         <Icon name="arrow-more" class="size-8"/>
+    </div>
+    <div class="absolute top-[50%] z-10">
+        <div class="animate-marquee whitespace-nowrap absolute top-0">
+            <span class="mx-8 text-8xl text-twa_yellow select-none font-semibold font-museo_sans">Something</span>
+            <span class="mx-8 text-8xl text-twa_yellow select-none font-semibold font-museo_sans">that</span>
+            <span class="mx-8 text-8xl text-twa_yellow select-none font-semibold font-museo_sans">is</span>
+            <span class="mx-8 text-8xl text-twa_yellow select-none font-semibold font-museo_sans">now</span>
+            <span class="mx-8 text-8xl text-twa_yellow select-none font-semibold font-museo_sans">but</span>
+            <span class="mx-8 text-8xl text-twa_yellow select-none font-semibold font-museo_sans">could</span>
+            <span class="mx-8 text-8xl text-twa_yellow select-none font-semibold font-museo_sans">never</span>
+            <span class="mx-8 text-8xl text-twa_yellow select-none font-semibold font-museo_sans">be</span>
+        </div>
+        <div class="animate-marquee2 whitespace-nowrap absolute top-0">
+            <span class="mx-8 text-8xl text-twa_yellow select-none font-semibold font-museo_sans">Something</span>
+            <span class="mx-8 text-8xl text-twa_yellow select-none font-semibold font-museo_sans">that</span>
+            <span class="mx-8 text-8xl text-twa_yellow select-none font-semibold font-museo_sans">is</span>
+            <span class="mx-8 text-8xl text-twa_yellow select-none font-semibold font-museo_sans">now</span>
+            <span class="mx-8 text-8xl text-twa_yellow select-none font-semibold font-museo_sans">but</span>
+            <span class="mx-8 text-8xl text-twa_yellow select-none font-semibold font-museo_sans">could</span>
+            <span class="mx-8 text-8xl text-twa_yellow select-none font-semibold font-museo_sans">never</span>
+            <span class="mx-8 text-8xl text-twa_yellow select-none font-semibold font-museo_sans">be</span>
+        </div>
+        <div class="animate-marquee_small whitespace-nowrap absolute top-32">
+            <span class="mx-6 text-sm text-twa_yellow select-none font-semibold font-museo_sans">Something</span>
+            <span class="mx-6 text-sm text-twa_yellow select-none font-semibold font-museo_sans">that</span>
+            <span class="mx-6 text-sm text-twa_yellow select-none font-semibold font-museo_sans">is</span>
+            <span class="mx-6 text-sm text-twa_yellow select-none font-semibold font-museo_sans">now</span>
+            <span class="mx-6 text-sm text-twa_yellow select-none font-semibold font-museo_sans">but</span>
+            <span class="mx-6 text-sm text-twa_yellow select-none font-semibold font-museo_sans">could</span>
+            <span class="mx-6 text-sm text-twa_yellow select-none font-semibold font-museo_sans">never</span>
+            <span class="mx-6 text-sm text-twa_yellow select-none font-semibold font-museo_sans">be</span>
+        </div>
+        <div class="animate-marquee_small_reverse whitespace-nowrap absolute top-32">
+            <span class="mx-6 text-sm text-twa_yellow select-none font-semibold font-museo_sans">Something</span>
+            <span class="mx-6 text-sm text-twa_yellow select-none font-semibold font-museo_sans">that</span>
+            <span class="mx-6 text-sm text-twa_yellow select-none font-semibold font-museo_sans">is</span>
+            <span class="mx-6 text-sm text-twa_yellow select-none font-semibold font-museo_sans">now</span>
+            <span class="mx-6 text-sm text-twa_yellow select-none font-semibold font-museo_sans">but</span>
+            <span class="mx-6 text-sm text-twa_yellow select-none font-semibold font-museo_sans">could</span>
+            <span class="mx-6 text-sm text-twa_yellow select-none font-semibold font-museo_sans">never</span>
+            <span class="mx-6 text-sm text-twa_yellow select-none font-semibold font-museo_sans">be</span>
+        </div>
     </div>
 </section>

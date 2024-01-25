@@ -26,10 +26,22 @@ module.exports = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        marquee: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+        marquee2: {
+            '0%': { transform: 'translateX(100%)' },
+            '100%': { transform: 'translateX(0%)' },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        marquee: 'marquee 30s linear infinite',
+				marquee2: 'marquee2 30s linear infinite',
+        marquee_small: 'marquee 20s linear infinite',
+				marquee_small_reverse: 'marquee2 20s linear infinite',
       },
       fontFamily: {
         "museo_sans": ["museo-sans", "sans-serif"],
